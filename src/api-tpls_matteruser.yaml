@@ -10,7 +10,7 @@
 
 
 templates:
-  message_matteruser: |
+  message_matteruser:"
     {
-      "text": "{text}"
-    }
+      {text}
+    }"
