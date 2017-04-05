@@ -58,7 +58,9 @@ processMessage = (strs, robot, fx)->
         t = s
         try
           s = escapeJsonString(s)
+          Winston.debug "Before Parsing", s
           s = JSON.parse(s)
+          Winston.debug "After Parsing", s
         catch err
           s = t
           Winston.debug err
