@@ -58,9 +58,9 @@ processMessage = (strs, robot, fx)->
         t = s
         try
           s = escapeJsonString(s)
-          Winston.debug "Before Parsing", s
-          s = JSON.parse(s)
-          Winston.debug "After Parsing", s
+          #Winston.debug "Before Parsing", s
+          #s = JSON.parse(s)
+          #Winston.debug "After Parsing", s
         catch err
           s = t
           Winston.debug err
@@ -93,6 +93,7 @@ initHubot = (robot)->
           s.as_user = false
           robot.logger.debug "Framework To send", s
           context.response[context.method](s)
+          
         return
       else
         robot.logger.debug "Not a Cha-UI Message"
