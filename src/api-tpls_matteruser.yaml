@@ -11,6 +11,4 @@
 
 templates:
   message_matteruser:
-  "{
-      {text}
-   }"
+  "{text}"
