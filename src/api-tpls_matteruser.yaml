@@ -1,3 +1,14 @@
 templates:
   message_matteruser:
-    "{text}"
+    ""{text}"
+    "{attachments}":[
+        {
+          "{fields}": [
+             {
+               "{title}"
+               "{value}"
+               "{short}"
+             }
+          ]
+         }"
+      
